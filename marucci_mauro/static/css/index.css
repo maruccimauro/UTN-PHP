@@ -1,0 +1,113 @@
+.section {
+    margin: 15px auto;
+    padding: 0.5%;
+    background-color: #99680621;
+    border: 1px solid #9968062c;
+    border-radius: 0.5%;
+}
+
+.new-article-index {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px rgba(15, 13, 13, 0.21);
+    justify-content: center;
+    background-image: url("../../resources/img/index_background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.container-left-index {
+    padding-bottom: 20px;
+    text-align: center;
+    align-self: center;
+}
+
+.container-right-index {
+    min-height: 170px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 2%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-image: url("../../resources/img/background-coffe.jpg");
+}
+
+.paragraph {
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    margin-top: auto;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 3em;
+    font-style: italic;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-shadow: 1px 1px 10px rgba(250, 246, 3, 0.726);
+    font-size: 2rem;
+}
+.container-right-index .logo {
+    animation: color-change 3s ease-in-out infinite;
+}
+
+@keyframes color-change {
+    0%,
+    100% {
+        color: rgb(205, 200, 255);
+    }
+    50% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.video-index {
+    width: 720px;
+    height: 460px;
+    border-radius: 10px;
+    border: 1px solid black;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon {
+    height: 50px;
+    margin: 10px 5px 0 5px;
+    max-width: 10%;
+    max-height: 10%;
+    width: 50px;
+}
+.social-icon:hover {
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 10px rgba(255, 196, 3, 0.5);
+}
+@media (max-width: 768px) {
+    .section {
+        max-width: 95%;
+        min-width: auto;
+    }
+    .new-article-index {
+        justify-content: space-between;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: -5px;
+        border: 1px solid rgba(121, 65, 65, 0.151);
+    }
+    .container-left-index {
+        width: auto;
+    }
+
+    .video-index {
+        margin-left: auto;
+        max-width: 95%;
+        height: 200px;
+        max-height: 50%;
+    }
+}

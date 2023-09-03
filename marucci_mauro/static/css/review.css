@@ -1,0 +1,90 @@
+.section {
+    max-width: 95%;
+    margin: 15px auto;
+    padding: 0.5%;
+    background-color: #99680621;
+    border: 1px solid #9968062c;
+    border-radius: 0.5%;
+}
+
+.new-article-review {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px rgba(15, 13, 13, 0.21);
+}
+.new-article-review:hover {
+    box-shadow: 5px 5px 5px rgba(15, 13, 13, 0.322);
+    margin-left: -1px;
+}
+
+.container-left-review {
+    min-height: 170px;
+    height: auto;
+    width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    padding-bottom: 20px;
+    text-align: center;
+    align-self: center;
+    background-image: url("../../resources/img/score_left_background.png");
+    background-size: 100% 100%;
+    background-repeat: cover;
+}
+
+.container-right-review {
+    min-height: 170px;
+    height: auto;
+    width: auto;
+    margin-left: 20px;
+}
+
+.container-right-review p {
+    margin-top: 8px;
+    font-size: 1.25em;
+    color: rgba(71, 22, 22, 0.966);
+    text-decoration: none;
+}
+
+.img-start {
+    height: 15px;
+    width: 15px;
+}
+
+.category-score {
+    color: rgba(0, 0, 0, 0.795);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 5px;
+    /*background-color: #99680621;*/
+    background-color: #99680610;
+}
+
+a.anchor-article {
+    text-decoration: none;
+}
+.comment_tittle {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(61, 2, 2, 0.966);
+    text-shadow: 5px 5px 5px rgba(15, 13, 13, 0.123);
+}
+@media (max-width: 768px) {
+    .new-article-review {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .new-article-review {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px solid rgba(121, 65, 65, 0.151);
+    }
+    .container-right-review p {
+        font-size: 1em;
+    }
+    .comment_tittle {
+        font-size: 1em;
+    }
+}
